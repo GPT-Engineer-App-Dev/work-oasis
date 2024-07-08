@@ -35,7 +35,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Brief description of the job listing.</p>
-                <Button variant="link" className="mt-4">Read more</Button>
+                <Button variant="link" className="mt-4" as="a" href={`/apply/${job}`}>
+                  Apply Now
+                </Button>
               </CardContent>
             </Card>
           ))}
